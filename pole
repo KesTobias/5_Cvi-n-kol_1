@@ -1,0 +1,42 @@
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Vítej v programu");
+        Console.WriteLine();
+        int[] arr = { 10, 5, 4, 6, 7 };
+        int[] arr2 = { 1, 2, 3, 4, 6 };
+        int[] arr3 = { 4, 7, 3, 9, 8 };
+        arr[0] = int.Parse(Console.ReadLine());
+        arr[1] = int.Parse(Console.ReadLine());
+        arr[2] = int.Parse(Console.ReadLine());
+        arr[3] = int.Parse(Console.ReadLine());
+        arr[4] = int.Parse(Console.ReadLine());
+
+        Console.WriteLine();
+        Console.WriteLine("Na indexu 0 je číslo: " + arr[0]);
+        Console.WriteLine("Na indexu 1 je číslo: " + arr[1]);
+        Console.WriteLine("Na indexu 2 je číslo: " + arr[2]);
+        Console.WriteLine("Na indexu 3 je číslo: " + arr[3]);
+        Console.WriteLine("Na indexu 4 je číslo: " + arr[4]);
+
+        int vysledek = arr2[0] + arr2[1] + arr2[2] + arr2[3] + arr2[4];
+        Console.WriteLine();
+        Console.WriteLine("Součet všech prvků druhého pole:");
+        Console.WriteLine(vysledek);
+
+        Console.WriteLine();
+        int pom = arr3[4];
+        arr3[4] = arr3[3];
+        arr3[3] = arr3[2];
+        arr3[2] = arr3[1];
+        arr3[1] = arr3[0];
+        arr3[0] = pom;
+        Console.WriteLine("Na indexu 0 je číslo: " + arr3[0]);
+        Console.WriteLine("Na indexu 1 je číslo: " + arr3[1]);
+        Console.WriteLine("Na indexu 2 je číslo: " + arr3[2]);
+        Console.WriteLine("Na indexu 3 je číslo: " + arr3[3]);
+        Console.WriteLine("Na indexu 4 je číslo: " + arr3[4]);
+    }
+
+}
